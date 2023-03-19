@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat filler</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <section class="user_list_container">
+                <div class="your_name">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="" class="your_img">
+                    <div class="names">Your name</div>
+                </div>
+                <div class="search_bar">
+                    <div class="input_container">
+                        <span>search</span>
+                        <input id="inputBtn" type="text" placeholder="Search your friends">
+                    </div>
+                </div>
+                <ul class="user_list" id="user_list">
+
+                </ul>
+            </section>
+            <section class="user_info" id="user_info">
+                <img src="https://i.ibb.co/WGDzNR2/a.png" alt="" class="user_img" id="contanct_img">
+                <h2 class="old_contact">Keep your phone connected</h2>
+                <span class="old_contact">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            </section>
+        </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

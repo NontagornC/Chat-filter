@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+    background: linear-gradient( to bottom, #ea5b3d, #ea5b3d 20%, #d4dbd9 20%, #d4dbd9 ); 
+    overflow: hidden;
+}
+
+main{
+    margin-top: 5vh;
+    width: 90vw;
+    max-width: 1200px;
+    height: 90vh;
+    display: flex;
+}
+
+.user_list_container{
+    height: 100%;
+    width: 33%;
+    overflow-y: auto;
+    background-color: #ededed;
+}
+
+.user_info{
+    height: 100%;
+    width: 67%;
+
+}
+
+.your_name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    background-color: #ededed;
+}
+
+.your_name>img{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 999px;
+}
+
+.your_name>.names{
+    font-size: 1.4rem;
+    color: #999;
+}
+.search_bar{
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    background-color: #ededed;
+}
+
+.input_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0 1.5rem;
+    background: white;
+    border-radius: 999px;
+}
+
+.input_container>span{
+    font-size: 1em;
+    text-align: center;
+    color: #666;
+
+}
+
+.input_container>input{
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    margin-left: 1rem;
+    outline: none;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+}
+
+.user_img{
+    border-radius: 999px;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.user_info>h2{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.user_info>span{
+    color: #888;
+    max-width: 400px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.user_info>img.newContact{
+    border-radius: 999px;
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+.user_info>h2.newContact{
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.user_info>span.newContact{
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.user_info>span.location{
+    margin-bottom: 10px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.user_list_box{
+    padding: 0.5rem 0.75rem;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    background-color: white;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+}
+
+.user_list_box:hover{
+    background-color:rgb(212, 212, 212);
+}
+
+.user_list_box>img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px
+}
+
+.user_list_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+}
+
+.user_list_name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_list_email{
+    color: #666;
+    font-size: 0.95rem;
+    margin-top: 2px;
+}
+
+
+/* // function insertUserInfo() {
+    //   if (userInfo.classList.contains("old_contact")) {
+    //     arrayOldContact.forEach((e) => {
+    //       userInfo.removeChild(e);
+    //     });
+    //   } else {
+    //     let InsertElement = document.querySelectorAll(".newContact");
+    //     let arrayInsertElement = Array.from(InsertElement);
+    //     arrayInsertElement.forEach((e) => {
+    //       userInfo.removeChild(e);
+    //     });
+    //   }
+    //   userInfo.innerHTML = `
+    //       <img class="newContact" src=${data.picture.large}>
+    //       <h2 class="newContact" >${data.name.title}.${data.name.first} ${data.name.last}</h2>
+    //       <span class="newContact" >Gender: ${data.gender}, Age: ${data.dob.age}</span>
+    //       <span class="newContact" >Email: ${data.email}</span>
+    //       <span class="location">
+    //       <img width="20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Ic_phone_48px.svg/1200px-Ic_phone_48px.svg.png" alt="phone">
+    //       ${data.cell}
+    //       </span>
+    //       <span class="location">
+    //       <img width="20" src="https://www.svgrepo.com/show/127575/location-sign.svg" alt="location">
+    //       ${data.location.city}, ${data.location.country}
+    //       </span>
+    //       `;
+    // } */
